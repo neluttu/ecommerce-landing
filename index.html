@@ -58,8 +58,8 @@
         </div>
     </div>
     <div class="mx-auto max-w-[1440px] px-3 mt-10 w-full">
-        <ul class="flex items-start justify-center w-full">
-            <li class="w-[25%]">
+        <ul class="flex items-start justify-center w-full md:flex-row flex-col-reverse">
+            <li class="w-[25%] shrink-0">
                 <h2 class="uppercase font-semibold text-xl text-pink-500 mb-2">Categories</h2>
                 <details class="group" open>
                     <summary class="flex justify-between items-center font-medium cursor-pointer list-none relative">
@@ -135,13 +135,13 @@
             </li>
             <li class="grow">
                 <div class="relative w-full">
-                    <span class="absolute top-1/2 w-12 bg-white/70 h-36 -translate-y-1/2 flex items-center justify-center cursor-pointer">
+                    <span class="absolute top-1/2 w-12 bg-white/30 transition-all duration-150 ease-in hover:bg-white/60 h-36 -translate-y-1/2 flex items-center justify-center cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" class="drop-shadow-md" width="36" height="36" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M15 6l-6 6l6 6" />
                         </svg>
                     </span>
-                    <span class="absolute top-1/2 right-0 w-12 bg-white/70 h-36 -translate-y-1/2 flex items-center justify-center cursor-pointer">
+                    <span class="absolute top-1/2 right-0 transition-all duration-150 ease-in hover:bg-white/60 w-12 bg-white/30 h-36 -translate-y-1/2 flex items-center justify-center cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" class="drop-shadow-md rotate-180" width="36" height="36" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M15 6l-6 6l6 6" />
@@ -150,15 +150,36 @@
                     <img src="https://neluttu.github.io/ecommerce-landing/slider_01.jpg">
                 </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-                      <div class="flex justify-center text-6xl border-2 border-gray-300 rounded-xl p-6 bg-gray-100">
-                            
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gap-y-14 mt-10">
+                      <div class="flex justify-center relative flex-col">
+                        <div class="absolute hidden items-center justify-center bottom-0 h-[80px] text-center bg-pink-500/80 w-full text-white font-semibold text-lg">
+                            Add to bag
+                        </div>
+                            <img src="https://img.modivo.cloud/product(8/5/3/3/853307612f056fc38b1c8adc3936474ea14d45d1_01_0000302283590_KC.jpg,webp)/adidas-tricou-il9470-alb-regular-fit.webp">
+                            <p class="mt-3 text-xl font-semibold text-pink-500 py-2">249,99 Eur</p>
+                            <p class="font-semibold text-slate-500">Short oversized sweatshirt</p>
                       </div>
-                      <div class="flex justify-center text-6xl border-2 border-gray-300 rounded-xl p-6 bg-gray-100">
+                      <div class="flex justify-center relative flex-col">
+                        <img src="https://img.modivo.cloud/product(1/2/f/f/12fffd9fa763330d02a97f6bf64e7a3af693838e_01_4066761641087.jpg,webp)/adidas-sutien-sport-hz1526-negru-0000302283446.webp">
+                        <p class="mt-3 text-xl font-semibold text-pink-500 py-2">249,99 Eur</p>
+                        <p class="font-semibold text-slate-500">Short oversized sweatshirt</p>
+                      </div>
+                      <div class="flex justify-center relative flex-col">
+                        <img src="https://img.modivo.cloud/product(9/f/4/0/9f40477e7f5e942fba6d85c0ce8d5dc7bbbbce72_01_4066763389949_DJ.jpg,webp)/adidas-tricou-polo-ij6136-alb-regular-fit.webp">
+                      </div>
 
+                      <div class="flex justify-center relative flex-col">
+                          <img src="https://img.modivo.cloud/product(c/3/f/f/c3ff78ca2387c0fa3535791bded6064656a6827a_01_0000302309115_RP.jpg,webp)/adidas-pantaloni-trening-ib3990-negru-regular-fit.webp">
                       </div>
-                      <div class="flex justify-center text-6xl border-2 border-gray-300 rounded-xl p-6 bg-gray-100"></div>
-                      <div class="flex justify-center text-6xl border-2 border-gray-300 rounded-xl p-6 bg-gray-100">4</div>
+
+                      <div class="flex justify-center relative flex-col">
+                        <img src="https://img.modivo.cloud/product(0/f/2/f/0f2f953c17fd806c307ba2ad84e1f62a24677e16_1_4065424674554.jpg,webp)/adidas-rochie-de-vara-adicolor-classics-hc2039-negru-slim-fit.webp">
+                      </div>
+
+                      <div class="flex justify-center relative flex-col">
+                        <img src="https://img.modivo.cloud/product(b/5/1/c/b51c9f28df3ab624cd79997eafe89261748d2c49_8445110409374_0178_100.jpg,webp)/desigual-rochie-de-zi-limon-23swvw85-alb-regular-fit.webp">
+                      </div>
+
                     </div>
             </li>
         </ul>
