@@ -17,14 +17,14 @@
     <div class="w-full max-w-[1440px] mx-auto bg-[#f4f6f8] px-3">
         <h1 class="text-4xl font-bold my-4 text-slate-700 drop-shadow-md">iBoughtThis</h1>
         <div class="flex items-center justify-start gap-4 font-semibold text-slate-700 mt-5">
-            <nav class="flex items-center justify-start grow gap-10 lg:gap-20 [&>a:hover]:text-pink-500 [&>a]:transition-all [&>a]:duration-150 [&>a]:ease-in">
-                <a href="">NEW</a>
+            <nav class="hidden md:flex items-center justify-start grow gap-10 lg:gap-20 [&>a:hover]:text-pink-500 [&>a]:transition-all [&>a]:duration-150 [&>a]:ease-in">
+                <a href="about:srcdoc#">NEW</a>
                 <a href="">GIFT GUIDE</a>
                 <a href="">PROMO</a>
                 <a href="">TRENDS</a>
                 <a href="">SOCIAL</a>
             </nav>
-            <section class="flex gap-8 items-center justify-center">
+            <section class="flex gap-8 items-center justify-end w-full md:w-auto">
                 <a href="#">Log In</a>
                 <a href="#" class="bg-pink-500 text-white rounded-full px-3 py-1 ">Sign Up</a>
                 <a href="#" class="relative">
@@ -39,11 +39,12 @@
                         <path d="M6 5l14 1l-1 7h-13"></path>
                      </svg>
                 </a>
+
             </section>
         </div>
     </div>
     <div class="w-full items-center justify-center gap-4 font-semibold text-slate-500/70 bg-white py-5 mt-3">
-        <div class="mx-auto text-lg max-w-[1440px] px-3 [&>a:hover]:text-pink-500 [&>a]:transition-all [&>a]:duration-150 [&>a]:ease-in">
+        <div class="mx-auto text-lg max-w-[1440px] px-3 [&>a:hover]:text-pink-500 [&>a]:transition-all [&>a]:duration-150 [&>a]:ease-in flex items-center justify-center gap-1">
             <a href="#">Home</a>
             <svg xmlns="http://www.w3.org/2000/svg" class="inline-block" width="14" height="14" viewBox="0 0 24 24" stroke-width="1.5" stroke="#686868" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -55,6 +56,13 @@
                 <path d="M9 6l6 6l-6 6" />
             </svg>
             <span href="#">Outwear</span>
+            <div class="grow text-right">
+                <svg xmlns="http://www.w3.org/2000/svg" class="inline-block cursor-pointer" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                    <path d="M21 21l-6 -6"></path>
+                </svg>
+            </div>
         </div>
     </div>
     <div class="mx-auto max-w-[1440px] px-3 mt-10 w-full">
@@ -150,35 +158,62 @@
                     <img src="https://neluttu.github.io/ecommerce-landing/slider_01.jpg">
                 </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gap-y-14 mt-10">
-                      <div class="flex justify-center relative flex-col">
-                        <div class="absolute hidden items-center justify-center bottom-0 h-[80px] text-center bg-pink-500/80 w-full text-white font-semibold text-lg">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gap-y-14 mt-10 mb-20">
+                      <div class="flex justify-center relative flex-col group">
+                        <div class="absolute hidden cursor-pointer items-center justify-center group-hover:flex h-[60px] text-center bg-pink-500/80 w-full text-white font-semibold text-lg">
                             Add to bag
                         </div>
                             <img src="https://img.modivo.cloud/product(8/5/3/3/853307612f056fc38b1c8adc3936474ea14d45d1_01_0000302283590_KC.jpg,webp)/adidas-tricou-il9470-alb-regular-fit.webp">
                             <p class="mt-3 text-xl font-semibold text-pink-500 py-2">249,99 Eur</p>
                             <p class="font-semibold text-slate-500">Short oversized sweatshirt</p>
                       </div>
-                      <div class="flex justify-center relative flex-col">
+                      <div class="flex justify-center relative flex-col group">
+                        <div class="absolute hidden cursor-pointer items-center justify-center group-hover:flex h-[60px] text-center bg-pink-500/80 w-full text-white font-semibold text-lg">
+                            Add to bag
+                        </div>
                         <img src="https://img.modivo.cloud/product(1/2/f/f/12fffd9fa763330d02a97f6bf64e7a3af693838e_01_4066761641087.jpg,webp)/adidas-sutien-sport-hz1526-negru-0000302283446.webp">
                         <p class="mt-3 text-xl font-semibold text-pink-500 py-2">249,99 Eur</p>
                         <p class="font-semibold text-slate-500">Short oversized sweatshirt</p>
                       </div>
-                      <div class="flex justify-center relative flex-col">
+                      <div class="flex justify-center relative flex-col group">
+                        <div class="absolute hidden cursor-pointer items-center justify-center group-hover:flex h-[60px] text-center bg-pink-500/80 w-full text-white font-semibold text-lg">
+                            Add to bag
+                        </div>
+
                         <img src="https://img.modivo.cloud/product(9/f/4/0/9f40477e7f5e942fba6d85c0ce8d5dc7bbbbce72_01_4066763389949_DJ.jpg,webp)/adidas-tricou-polo-ij6136-alb-regular-fit.webp">
-                      </div>
+                        <p class="mt-3 text-xl font-semibold text-pink-500 py-2">249,99 Eur</p>
+                        <p class="font-semibold text-slate-500">Short oversized sweatshirt</p>
+                  </div>
 
-                      <div class="flex justify-center relative flex-col">
+                      <div class="flex justify-center relative flex-col group">
+                        <div class="absolute hidden cursor-pointer items-center justify-center group-hover:flex h-[60px] text-center bg-pink-500/80 w-full text-white font-semibold text-lg">
+                            Add to bag
+                        </div>
+
                           <img src="https://img.modivo.cloud/product(c/3/f/f/c3ff78ca2387c0fa3535791bded6064656a6827a_01_0000302309115_RP.jpg,webp)/adidas-pantaloni-trening-ib3990-negru-regular-fit.webp">
-                      </div>
+                          <p class="mt-3 text-xl font-semibold text-pink-500 py-2">249,99 Eur</p>
+                          <p class="font-semibold text-slate-500">Short oversized sweatshirt</p>
+                    </div>
 
-                      <div class="flex justify-center relative flex-col">
+                      <div class="flex justify-center relative flex-col group">
+                        <div class="absolute hidden cursor-pointer items-center justify-center group-hover:flex h-[60px] text-center bg-pink-500/80 w-full text-white font-semibold text-lg">
+                            Add to bag
+                        </div>
+
                         <img src="https://img.modivo.cloud/product(0/f/2/f/0f2f953c17fd806c307ba2ad84e1f62a24677e16_1_4065424674554.jpg,webp)/adidas-rochie-de-vara-adicolor-classics-hc2039-negru-slim-fit.webp">
-                      </div>
+                        <p class="mt-3 text-xl font-semibold text-pink-500 py-2">249,99 Eur</p>
+                        <p class="font-semibold text-slate-500">Short oversized sweatshirt</p>
+                  </div>
 
-                      <div class="flex justify-center relative flex-col">
+                      <div class="flex justify-center relative flex-col group">
+                        <div class="absolute hidden cursor-pointer items-center justify-center group-hover:flex h-[60px] text-center bg-pink-500/80 w-full text-white font-semibold text-lg">
+                            Add to bag
+                        </div>
+
                         <img src="https://img.modivo.cloud/product(b/5/1/c/b51c9f28df3ab624cd79997eafe89261748d2c49_8445110409374_0178_100.jpg,webp)/desigual-rochie-de-zi-limon-23swvw85-alb-regular-fit.webp">
-                      </div>
+                        <p class="mt-3 text-xl font-semibold text-pink-500 py-2">249,99 Eur</p>
+                        <p class="font-semibold text-slate-500">Short oversized sweatshirt</p>
+                  </div>
 
                     </div>
             </li>
